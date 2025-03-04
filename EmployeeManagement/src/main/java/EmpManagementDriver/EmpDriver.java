@@ -20,7 +20,9 @@ public class EmpDriver {
 		
 		switch (choice) {
 		case 1:
-			e1.save();
+			int res = e1.save();
+			if(res!=0) System.out.println("Data saved sucessfully.");
+			else System.out.println("Data not saved.");
 			break;
 
 		default:
