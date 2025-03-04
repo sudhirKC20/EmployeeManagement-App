@@ -20,14 +20,13 @@ public class EmpDriver {
 		
 		switch (choice) {
 		case 1:
-			
+			e1.save();
 			break;
 
 		default:
 			break;
 		}
-		
-		
+				
 	}
 
 }
