@@ -2,6 +2,7 @@ package EmpManagementService;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.*;
 
@@ -12,7 +13,7 @@ public class EmpService {
 	static {
 		try {
 			Class.forName("org.postgresql.Driver");
-			DriverManager.getConnection(url);
+			con = DriverManager.getConnection(url);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
@@ -21,7 +22,7 @@ public class EmpService {
 		
 	}
 	
-	public save() {
+	public int save() {
 		int res = 0;
 		System.out.println("Enter the employee id: ");
 		int id = sc.nextInt();
@@ -29,7 +30,26 @@ public class EmpService {
 		String name = sc.next();
 		System.out.println("Entetr the employee age: ");
 		int age = sc.nextInt();
+		System.out.println("Enter the employee salary: ");
+		int salary = sc.nextInt();
 		
+		String sql = "INSERT into employee values(?,?,?,?)";
+		
+		PreparedStatement pstm;
+		try {
+			pstm = con.prepareStatement(sql);
+			pstm.setInt(1, id);
+			pstm.setString(2, name);
+			pstm.setInt(3, age);
+			pstm.setInt(4, salary);
+			
+			res = pstm.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return res;
 	}
 
 }
