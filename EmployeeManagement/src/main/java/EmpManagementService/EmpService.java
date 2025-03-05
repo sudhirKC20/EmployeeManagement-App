@@ -51,5 +51,63 @@ public class EmpService {
 
 		return res;
 	}
+	
+	
+	public int update() {
+		int res =0;
+		System.out.println("Enter the id to be updated: ");
+		int id = sc.nextInt();
+		System.out.println("Enter the salary to be updated");
+		int salary = sc.nextInt();
+		
+		String sql = "UPDATE employee set salary = ? where id = ?";
+		try {
+			PreparedStatement pstm = con.prepareStatement(sql);
+			pstm.setInt(1, salary);
+			pstm.setInt(2, id);
+			
+			res = pstm.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return res;
+		
+	}
+	
+	public int delete() {
+		int res = 0;
+		System.out.println("Enter the id to be deleted: ");
+		int id = sc.nextInt();
+		String sql = "DELETE from employee where id = ?";
+		try {
+			PreparedStatement pstm = con.prepareStatement(sql);
+			pstm.setInt(1, id);
+			res = pstm.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return res;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
