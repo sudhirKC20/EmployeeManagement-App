@@ -24,6 +24,17 @@ public class EmpDriver {
 			if(res!=0) System.out.println("Data saved sucessfully.");
 			else System.out.println("Data not saved.");
 			break;
+			
+		case 2:
+			int res1 = e1.update();
+			if(res1!=0) System.out.println("Data updated sucessfully.");
+			else System.out.println("Data not updated");
+			break;
+			
+		case 3:
+			int res2 = e1.delete();
+			if(res2!=0) System.out.println("Data deleted sucessfully.");
+			else System.out.println("Data not deleted.");
 
 		default:
 			break;
