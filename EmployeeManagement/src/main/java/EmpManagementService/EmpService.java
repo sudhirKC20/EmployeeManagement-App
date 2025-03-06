@@ -115,6 +115,18 @@ public class EmpService {
 		
 		return emp;
 	}
+	public boolean close() {
+		boolean flag = false;
+			try {
+				con.close();
+				flag = true;
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		return flag;
+		
+	}
 	
 	
 	

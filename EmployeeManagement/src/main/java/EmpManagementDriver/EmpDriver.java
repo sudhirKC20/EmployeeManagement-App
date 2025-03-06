@@ -58,9 +58,14 @@ public class EmpDriver {
 
 				break;	
 				
-
+			case 5:
+				boolean flag1 =  e1.close();
+				if(flag1) {
+					System.out.println("Application closed");
+					flag = false;
+				}
+				break;
 				
-
 			default:
 				break;
 			}
