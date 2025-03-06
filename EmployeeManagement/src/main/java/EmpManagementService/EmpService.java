@@ -3,7 +3,9 @@ package EmpManagementService;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.*;
 
 public class EmpService {
@@ -91,13 +93,28 @@ public class EmpService {
 		return res;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
+	public List<Employee> fetchAll(){
+		List<Employee> emp = new ArrayList<Employee>();
+		String sql = "SELECT * from employee";
+		
+		try {
+			Statement stm = con.createStatement();
+			ResultSet rs = stm.executeQuery(sql);
+			while(rs.next()) {
+				int id = rs.getInt(1);
+				String name = rs.getString(2);
+				int age = rs.getInt(3);
+				int salary = rs.getInt(4);
+				
+				Employee e1 = new Employee(id, name, age, salary);
+				emp.add(e1);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return emp;
+	}
 	
 	
 	
