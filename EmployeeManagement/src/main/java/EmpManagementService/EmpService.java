@@ -115,6 +115,7 @@ public class EmpService {
 		
 		return emp;
 	}
+	
 	public boolean close() {
 		boolean flag = false;
 			try {
@@ -123,9 +124,6 @@ public class EmpService {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-			
 		return flag;
-		
-	}
-	
+	}	
 }
