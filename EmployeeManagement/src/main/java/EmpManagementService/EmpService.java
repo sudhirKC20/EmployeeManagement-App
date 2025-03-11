@@ -44,7 +44,6 @@ public class EmpService {
 			pstm.setString(2, name);
 			pstm.setInt(3, age);
 			pstm.setInt(4, salary);
-			
 			res = pstm.executeUpdate();
 			
 		} catch (SQLException e) {
