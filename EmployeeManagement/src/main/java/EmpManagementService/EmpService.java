@@ -38,6 +38,7 @@ public class EmpService {
 		String sql = "INSERT into employee values(?,?,?,?)";
 		
 		PreparedStatement pstm;
+		
 		try {
 			pstm = con.prepareStatement(sql);
 			pstm.setInt(1, id);
