@@ -63,7 +63,6 @@ public class EmpDriver {
 					System.out.println("Application closed");
 					flag = false;
 				}
-				
 				break;
 
 			default:
