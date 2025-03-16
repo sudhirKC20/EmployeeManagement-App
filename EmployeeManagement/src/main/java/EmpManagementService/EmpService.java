@@ -114,7 +114,6 @@ public class EmpService {
 		
 		return emp;
 	}
-	
 	public boolean close() {
 		boolean flag = false;
 			try {
