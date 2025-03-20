@@ -3,7 +3,6 @@
   <groupId>Employee_Management</groupId>
   <artifactId>EmployeeManagement</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
 <dependency>
@@ -11,6 +10,5 @@
     <artifactId>postgresql</artifactId>
     <version>42.7.3</version>
 </dependency>
-
   </dependencies>
 </project>
