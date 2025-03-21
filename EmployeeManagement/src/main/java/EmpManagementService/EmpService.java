@@ -73,7 +73,6 @@ public class EmpService {
 		}
 		
 		return res;
-		
 	}
 	
 	public int delete() {
