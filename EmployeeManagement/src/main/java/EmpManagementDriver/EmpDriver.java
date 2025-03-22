@@ -24,7 +24,6 @@ public class EmpDriver {
 			int choice = sc.nextInt();
 
 			switch (choice) {
-			
 			case 1:
 				int res = e1.save();
 				if (res != 0)
