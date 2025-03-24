@@ -38,6 +38,7 @@ public class EmpDriver {
 					System.out.println("Data updated sucessfully.");
 				else
 					System.out.println("Data not updated");
+				
 				break;
 
 			case 3:
