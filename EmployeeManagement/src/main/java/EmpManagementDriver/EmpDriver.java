@@ -23,7 +23,6 @@ public class EmpDriver {
 		while (flag) {
 			System.out.println("Select any option:");
 			int choice = sc.nextInt();
-
 			switch (choice) {
 			
 			case 1:
