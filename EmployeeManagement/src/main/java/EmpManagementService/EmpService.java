@@ -13,6 +13,7 @@ public class EmpService {
 	private static String url = "jdbc:postgresql://localhost:5432/employeemanagement?user=postgres&password=123";
 	private static Scanner sc = new Scanner(System.in);
 	static {
+		
 		try {
 			Class.forName("org.postgresql.Driver");
 			con = DriverManager.getConnection(url);
