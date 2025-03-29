@@ -22,7 +22,6 @@ public class EmpService {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
 	}
 	
 	public int save() {
