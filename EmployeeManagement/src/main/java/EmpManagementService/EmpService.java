@@ -51,8 +51,7 @@ public class EmpService {
 			e.printStackTrace();
 		}
 		return res;
-	}
-	
+	}	
 	public int update() {
 		int res =0;
 		System.out.println("Enter the id to be updated: ");
