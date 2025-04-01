@@ -63,6 +63,7 @@ public class EmpService {
 		
 		String sql = "UPDATE employee set salary = ? where id = ?";
 		
+		
 		try {
 			PreparedStatement pstm = con.prepareStatement(sql);
 			pstm.setInt(1, salary);
