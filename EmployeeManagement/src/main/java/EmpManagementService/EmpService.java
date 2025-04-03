@@ -60,7 +60,6 @@ public class EmpService {
 		int id = sc.nextInt();
 		System.out.println("Enter the salary to be updated");
 		int salary = sc.nextInt();
-		
 		String sql = "UPDATE employee set salary = ? where id = ?";
 		
 		try {
