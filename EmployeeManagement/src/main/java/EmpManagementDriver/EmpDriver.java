@@ -36,6 +36,7 @@ public class EmpDriver {
 
 			case 2:
 				int res1 = e1.update();
+				
 				if (res1 != 0)
 					System.out.println("Data updated sucessfully.");
 				else
