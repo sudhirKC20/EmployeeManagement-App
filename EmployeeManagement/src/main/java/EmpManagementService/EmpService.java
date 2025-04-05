@@ -65,8 +65,7 @@ public class EmpService {
 		try {
 			PreparedStatement pstm = con.prepareStatement(sql);
 			pstm.setInt(1, salary);
-			pstm.setInt(2, id);
-			
+			pstm.setInt(2, id);	
 			res = pstm.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
