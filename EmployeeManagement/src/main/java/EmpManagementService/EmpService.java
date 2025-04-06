@@ -103,7 +103,6 @@ public class EmpService {
 				String name = rs.getString(2);
 				int age = rs.getInt(3);
 				int salary = rs.getInt(4);
-				
 				Employee e1 = new Employee(id, name, age, salary);
 				emp.add(e1);
 			}
