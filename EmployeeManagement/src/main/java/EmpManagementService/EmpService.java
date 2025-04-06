@@ -78,6 +78,7 @@ public class EmpService {
 		System.out.println("Enter the id to be deleted: ");
 		int id = sc.nextInt();
 		String sql = "DELETE from employee where id = ?";
+		
 		try {
 			PreparedStatement pstm = con.prepareStatement(sql);
 			pstm.setInt(1, id);
