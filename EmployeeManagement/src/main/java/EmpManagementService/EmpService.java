@@ -97,7 +97,6 @@ public class EmpService {
 		try {
 			Statement stm = con.createStatement();
 			ResultSet rs = stm.executeQuery(sql);
-			
 			while(rs.next()) {
 				int id = rs.getInt(1);
 				String name = rs.getString(2);
