@@ -55,6 +55,7 @@ public class EmpService {
 	}	
 	
 	public int update() {
+		
 		int res =0;
 		System.out.println("Enter the id to be updated: ");
 		int id = sc.nextInt();
