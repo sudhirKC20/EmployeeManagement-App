@@ -15,7 +15,6 @@ public class EmpDriver {
 		System.out.println("3.Delete Employee ");
 		System.out.println("4.Fetch all Employee Data ");
 		System.out.println("5.Close the Connection \n");
-
 		Scanner sc = new Scanner(System.in);
 		EmpService e1 = new EmpService();
 		
