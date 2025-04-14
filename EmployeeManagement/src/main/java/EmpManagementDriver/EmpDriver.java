@@ -20,7 +20,6 @@ public class EmpDriver {
 		EmpService e1 = new EmpService();
 		
 		while (flag) {
-			
 			System.out.println("Select any option:");
 			int choice = sc.nextInt();
 			
