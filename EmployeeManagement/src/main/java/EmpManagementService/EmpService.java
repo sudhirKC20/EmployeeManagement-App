@@ -92,6 +92,7 @@ public class EmpService {
 	public List<Employee> fetchAll(){
 		List<Employee> emp = new ArrayList<Employee>();
 		String sql = "SELECT * from employee";
+		
 		try {
 			Statement stm = con.createStatement();
 			ResultSet rs = stm.executeQuery(sql);
