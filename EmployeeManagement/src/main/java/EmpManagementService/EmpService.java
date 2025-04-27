@@ -86,8 +86,7 @@ public class EmpService {
 			e.printStackTrace();
 		}
 		return res;
-	}
-	
+	}	
 	
 	public List<Employee> fetchAll(){
 		List<Employee> emp = new ArrayList<Employee>();
