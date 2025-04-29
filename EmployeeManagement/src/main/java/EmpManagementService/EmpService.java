@@ -84,8 +84,7 @@ public class EmpService {
 			res = pstm.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
-		
+		}	
 		return res;
 	}	
 		
