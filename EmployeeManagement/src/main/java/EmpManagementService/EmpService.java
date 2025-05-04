@@ -87,7 +87,6 @@ public class EmpService {
 		}	
 		return res;
 	}	
-	
 		
 	public List<Employee> fetchAll(){
 		List<Employee> emp = new ArrayList<Employee>();
