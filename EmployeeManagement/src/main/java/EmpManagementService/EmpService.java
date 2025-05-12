@@ -74,6 +74,7 @@ public class EmpService {
 	}
 	
 	public int delete() {
+		
 		int res = 0;
 		System.out.println("Enter the id to be deleted: ");
 		int id = sc.nextInt();
