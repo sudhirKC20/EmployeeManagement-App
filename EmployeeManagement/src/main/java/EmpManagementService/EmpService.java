@@ -86,7 +86,8 @@ public class EmpService {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}	
-		return res;
+		return res; 
+		
 	}	
 		
 	public List<Employee> fetchAll(){
